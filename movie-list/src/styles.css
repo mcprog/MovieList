@@ -4,3 +4,10 @@
 body {
    margin: 0;
 }
+
+span.badge {
+   margin-right: 10px;
+   padding: 7px;
+   color: white;
+   background-color: grey;
+}
