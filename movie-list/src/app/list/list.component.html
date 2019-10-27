@@ -1,0 +1,10 @@
+
+<h2 class=mat-h2>Available Movies</h2>
+<mat-selection-list>
+   <mat-list-option *ngFor="let movie of movies">
+      <span>
+         <span class="badge" color="primary">{{ movie.id }}</span>
+         <span>{{ movie.title }}</span>
+      </span>
+   </mat-list-option>
+</mat-selection-list>

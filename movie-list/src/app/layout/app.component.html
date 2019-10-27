@@ -1,0 +1,16 @@
+<mat-sidenav-container fullscreen>
+
+   <mat-sidenav mode="side" opened>
+      <mat-toolbar color="primary">
+        <span>{{ title }}</span>
+      </mat-toolbar>
+      <mat-nav-list>
+         <a mat-list-item>Movies</a>
+         <a mat-list-item>Lists</a>
+         <a mat-list-item>New List</a>
+      </mat-nav-list>
+   </mat-sidenav>
+   <mat-sidenav-content>
+      <app-list></app-list>
+   </mat-sidenav-content>
+</mat-sidenav-container>
