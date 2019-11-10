@@ -1,0 +1,19 @@
+<h2 class=mat-h2>Edit list</h2>
+<form>
+   <mat-form-field>
+      <input matInput placeholder="List name">
+   </mat-form-field>
+   <mat-form-field>
+      <input matInput placeholder="Search" name="searchText" [(ngModel)]="searchText" autocomplete="off">
+      <mat-hint align="start">Narrow movie selection</mat-hint>
+   </mat-form-field>
+   <mat-selection-list>
+      <mat-list-option *ngFor="let movie of movies | search: searchText as resultMovies">
+         <span>
+            <span class="badge" color="primary">{{ movie.id }}</span>
+            <span>{{ movie.title }}</span>
+         </span>
+      </mat-list-option>
+   </mat-selection-list>
+   <button mat-flat-button color="primary" disabled>CREATE LIST</button>
+</form>

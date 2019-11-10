@@ -1,0 +1,27 @@
+
+<h2 class=mat-h2>Your Movie Lists</h2>
+<mat-accordion>
+   <div *ngFor="let list of lists">
+
+      <mat-expansion-panel>
+
+         <mat-expansion-panel-header>
+            <mat-panel-title>{{ list.name }}</mat-panel-title>
+            <mat-panel-description>{{ list.length }} movies
+            </mat-panel-description>
+
+         </mat-expansion-panel-header>
+            <button mat-flat-button color="accent"><mat-icon>edit</mat-icon> Edit</button>
+         <mat-list *ngFor="let movie of (list.movies || {})">
+            <mat-list-item>{{ (movie || {}).title }}</mat-list-item>
+         </mat-list>
+         <!--<mat-list>
+            <mat-list-item *ngFor="let movie of list.movies">
+               {{ movie.title }}
+            </mat-list-item>
+         </mat-list>-->
+
+      </mat-expansion-panel>
+
+   </div>
+</mat-accordion>

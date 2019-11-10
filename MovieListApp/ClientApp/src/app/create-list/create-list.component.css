@@ -1,0 +1,13 @@
+h2, form {
+   margin: 16px;
+}
+
+mat-form-field {
+   width: 100%;
+}
+
+button {
+   margin-top: 10px;
+   float: right;
+   width: 300px;
+}

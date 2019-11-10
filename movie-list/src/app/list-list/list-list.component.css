@@ -1,0 +1,11 @@
+h2 {
+   margin: 16px;
+}
+
+button {
+   width: 100px;
+}
+
+.mat-list-base .mat-list-item .mat-list-item-content, .mat-list-base .mat-list-option .mat-list-item-content {
+   padding: 0 !important;
+}
